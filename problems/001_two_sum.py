@@ -1,10 +1,6 @@
-#
-# @lc app=leetcode id=1 lang=python3
-#
-# [1] Two Sum
-#
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-# @lc code=start
 class Solution(object):
     def twoSum(self, nums, target):
         d={}
@@ -12,5 +8,3 @@ class Solution(object):
             if target-num in d:
                 return d[target-num], i
             d[num]=i
-# @lc code=end
-

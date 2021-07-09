@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Cancan Huang @ 2019-07-21
-
-# I saw this solution online. I cannot imagine such a brief solution.
 
 # Definition for singly-linked list.
 # class ListNode:

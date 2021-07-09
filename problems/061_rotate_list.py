@@ -1,14 +1,11 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author: cancan233
-# @Date:   2019-07-20 23:42:21
-# @Last Modified by:   cancan233
-# @Last Modified time: 2019-07-20 23:49:21
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
 
 class Solution:
     def rotateRight(self, head: ListNode, k: int) -> ListNode:

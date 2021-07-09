@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Cancan Huang @ 2019-07-19
 
 # Definition for singly-linked list.
 # class ListNode:
