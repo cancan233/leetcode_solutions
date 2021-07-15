@@ -7,6 +7,11 @@
 #         self.val = x
 #         self.next = None
 
+"""
+TEST Case: [1,2,3] and k=200000
+"""
+
+
 class Solution:
     def rotateRight(self, head: ListNode, k: int) -> ListNode:
         if not head:
@@ -36,16 +41,30 @@ class Solution:
             p.next = None
         return head
 
+        # Or you can use two points
+        dummy = ListNode("#")
+        dummy.next = head
+
+        for i in range(k):
+            p1 = p2 = dummy
+            while p2.next != None:
+                previous = p2
+                p2 = p2.next
+            p2.next = p1.next
+            p1.next = p2
+            previous.next = None
+        return dummy.next
+
         # optional answer, which is similar to #19
-        # p1 = p2 = head
-        # for i in range(k):
-        #     p1 = p1.next
+        p1 = p2 = head
+        for i in range(k):
+            p1 = p1.next
 
-        # while p1.next:
-        #     p2 = p2.next
-        #     p1 = p1.next
+        while p1.next:
+            p2 = p2.next
+            p1 = p1.next
 
-        # p1.next = head
-        # head = p2.next
-        # p2.next = None
-        # return head
+        p1.next = head
+        head = p2.next
+        p2.next = None
+        return head
