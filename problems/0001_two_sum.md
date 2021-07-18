@@ -1,5 +1,5 @@
 # Two Sum
-> easy. link: [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
+> easy. link: [click here](https://leetcode.com/problems/two-sum/)
 
 ## Problem
 

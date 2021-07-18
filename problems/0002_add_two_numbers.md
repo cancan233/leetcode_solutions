@@ -1,12 +1,33 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# Add Two Numbers
+> easy. link: [click here](https://leetcode.com/problems/add-two-numbers/)
 
+## Problem
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+## Examples
+``` 
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
+```
+
+```
+Input: l1 = [0], l2 = [0]
+Output: [0]
+```
+
+## Solution
+
+Runtime: 68 ms, faster than 77.20% of Python3 online submissions for adding two numbers.
+
+Memory Usage: 14.1 MB, less than 89.84% of Python3 online submissions for adding two numbers.
+
+## Code
+
+```python
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         addone = 0
@@ -51,3 +72,4 @@ class Solution:
             output.next = empty
 
         return head.next
+```
