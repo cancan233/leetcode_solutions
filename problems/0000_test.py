@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import random
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -9,22 +11,19 @@ class ListNode:
 
 
 def solution(nums):
-    output = set()
-    nums.sort()
-    for i in range(0, len(nums) - 2):
-        if i > 0 and nums[i] == nums[i - 1]:
-            continue
-        target = 0 - nums[i]
-        storage = {}
-        for j in range(i + 1, len(nums)):
-            if nums[j] in storage:
-                output.add((nums[i], storage[nums[j]], nums[j]))
-            storage[target - nums[j]] = nums[j]
-    return output
+    first = second = float("inf")
+    for n in nums:
+        if n <= first:
+            first = n
+        elif n <= second:
+            second = n
+        else:
+            return True
+        print(first, second)
+    return False
 
 
 if __name__ == "__main__":
-    input = [-2, 0, 1, 1, 2]
-    # input = [0, 0, 0, 0]
-    input = [-1, 0, 1, 2, -1, -4]
+    input = [2, 1, 5, 0, 4, 6]
     print(solution(input))
+    # print(random.randint(0, 500))

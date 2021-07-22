@@ -1,13 +1,20 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# Remove Duplicates from Sorted List
+> Easy
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+Given the `head` of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list `sorted` as well.
 
+## Examples
+```
+Input： head = [1, 1, 2, 3, 3]
+Output: [1, 2, 3]
+```
 
+## Solution
+``` python
+"""
+Performance: 40 ms faster than 81.8%
+             14.2 MB less than 80.89%
+"""
 class Solution:
     def deleteDuplicates(self, head: ListNode) -> ListNode:
         p1 = p2 = head
@@ -23,9 +30,11 @@ class Solution:
                 p2 = p2.next
                 p1 = p1.next
         return head
+```
 
+``` python
 # Online solution. same speed. but more concise
-    def deleteDuplicates(self, head: ListNode) -> ListNode:
+def deleteDuplicates(self, head: ListNode) -> ListNode:
     if not head:
         return
     output = head
@@ -35,3 +44,4 @@ class Solution:
         else:
             head = head.next
     return output
+```

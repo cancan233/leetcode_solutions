@@ -21,13 +21,12 @@ Output: [0]
 
 ## Solution
 
-Runtime: 68 ms, faster than 77.20% of Python3 online submissions for adding two numbers.
-
-Memory Usage: 14.1 MB, less than 89.84% of Python3 online submissions for adding two numbers.
-
-## Code
-
 ```python
+"""
+Performance: 68 ms faster than 77.20%
+             14.1 MB less than 89.84%
+"""
+
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         addone = 0

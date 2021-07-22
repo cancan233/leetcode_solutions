@@ -1,13 +1,20 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# Swap Nodes in Pairs
+> Medium
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 
+## Examples
+```
+Input: head = [1, 2, 3, 4]
+Output: [2, 1, 4, 3]
+```
 
+## Solution
+``` python
+"""
+Performance: 32 ms faster than 66.33%
+             14.3 MB less than %
+"""
 class Solution:
     def swapPairs(self, head: ListNode) -> ListNode:
         if head == None or head.next == None:
@@ -34,3 +41,4 @@ class Solution:
             current.next = after.next
             after.next = current
         return dummy.next
+```

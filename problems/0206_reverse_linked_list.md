@@ -1,12 +1,16 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# Reverse Linked List
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+Given the `head` of a singly linked list, reverse the list, and return the `reversed list`.
 
+## Examples
+```
+Input: head = [1, 2, 3, 4, 5]
+Output: [5, 4, 3, 2, 1]
+```
+
+## Solution
+
+```python
 
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
@@ -17,7 +21,9 @@ class Solution:
         output.next.next = output
         output.next = None
         return head
+```
 
+``` python
     # iterative solution
     def reverseList(self, head: ListNode) -> ListNode:
         if head == None or head.next == None:
@@ -34,3 +40,4 @@ class Solution:
         while head:
             head.next, head, next = next, head.next, head
         return next  # ***important***
+```

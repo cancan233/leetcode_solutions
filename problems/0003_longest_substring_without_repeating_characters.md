@@ -22,11 +22,11 @@ Use dictionary to store the visited characters. Use slide window to calculate th
 
 ## Code
 
-Runtime: 776 ms, faster than 8.55% of Python3 online submissions for Longest Substring Without Repeating Characters.
-
-Memory Usage: 19.1 MB, less than 24.24% of Python3 online submissions for Longest Substring Without Repeating Characters.
-
 ``` python
+"""
+Performance: 776 ms faster than 8.55%
+             19.1 MB less than 24.24%
+"""
 class Solution:
     # @return an integer
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -51,10 +51,11 @@ class Solution:
         return len(max(outputs, key=len))
 ```
 
-Runtime: 52 ms, faster than 92.23% of Python3 online submissions for Longest Substring Without Repeating Characters.
-
-Memory Usage: 14.4 MB, less than 24.24% of Python3 online submissions for Longest Substring Without Repeating Characters.
 ``` python
+"""
+Performance: 52 ms faster than 92.23%
+             14.4 MB less than 24.24%
+"""
 class Solution:
     # @return an integer
     def lengthOfLongestSubstring(self, s):

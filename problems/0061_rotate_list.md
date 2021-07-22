@@ -1,17 +1,21 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# Rotate List
+> Medium
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+Given the `head` of a linked list, rotate the list to the right by `k` places.
 
+## Examples
+```
+Input: [1,2,3] and k=200000
+```
+
+## Solution
+Minimize the loop by dividing k with nums length. Double pointers to rotate the list.
+
+``` python
 """
-TEST Case: [1,2,3] and k=200000
+Performance: 52 ms faster than 17.18%
+             14.5 MB less than %
 """
-
-
 class Solution:
     def rotateRight(self, head: ListNode, k: int) -> ListNode:
         if not head:
@@ -68,3 +72,4 @@ class Solution:
         head = p2.next
         p2.next = None
         return head
+```
