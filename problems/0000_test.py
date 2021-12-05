@@ -10,20 +10,12 @@ class ListNode:
         self.next = next
 
 
-def solution(nums):
-    first = second = float("inf")
-    for n in nums:
-        if n <= first:
-            first = n
-        elif n <= second:
-            second = n
-        else:
-            return True
-        print(first, second)
-    return False
+class Solution:
+    def climstairs(self, n):
+        return n
 
 
 if __name__ == "__main__":
-    input = [2, 1, 5, 0, 4, 6]
-    print(solution(input))
-    # print(random.randint(0, 500))
+    test_cases = [17]
+    for test_case in test_cases:
+        print(Solution().climstairs(test_case))
