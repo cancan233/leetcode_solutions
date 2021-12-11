@@ -2,20 +2,27 @@
 # -*- coding: utf-8 -*-
 
 import random
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from utils import *
 
 
 class Solution:
-    def climstairs(self, n):
-        return n
+    def minWindow(self, s, t):
+        minwindow = ""
+        count = t.counter()
+        p1, p2 = 0, 0
+        for p2 in range(len(s)):
+            if count[s[p2]] >= 0:
+                pass 
+            while cnt == len(t):
+                if (r - l + 1 < min_size):
+                    min_l = 
+                if 
+            minwindow = s[p1:p2]
+        return minwindow
 
 
 if __name__ == "__main__":
-    test_cases = [17]
-    for test_case in test_cases:
-        print(Solution().climstairs(test_case))
+    # 0076
+    s = "ADOBECODEBANC"
+    t = "ABC"
+    print(Solution().minWindow(s, t))
