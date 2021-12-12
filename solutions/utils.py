@@ -11,7 +11,7 @@ class ListNode:
 
 def stringToListNode(input):
     numbers = input
-    dummyRoot = ListNode(0)ß
+    dummyRoot = ListNode(0)
     ptr = dummyRoot
     for number in numbers:
         ptr.next = ListNode(number)
