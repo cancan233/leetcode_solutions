@@ -13,6 +13,7 @@ python solutions for leetcode problems.
 | 24 | Swap nodes pairs | [python](./solutions/0024_swap_nodes_pairs.md) | medium |
 | 34 | Find First and Last Position of Element in Sorted Array | [python](./solutions/0034_find_first_and_last_position_of_element_in_sorted_array.md) | medium | 
 | 61 | Rotate list | [python](./solutions/0061_rotate_list.md) | medium |
+| 81 | Search in rotated sorted array II | [python](./solutions/0081_search_in_rotated_sorted_array_II.md) | medium |
 | 83 | Remove duplicates from sorted list | [python](./solutions/0083_remove_duplicates_from_sorted_list.md) | easy | 
 | 88 | Merge sorted array | [python](./solutions/0088_merge_sorted_array.md) | easy | 
 | 142 | Linked list cycle II | [python](./solutions/0142_linked_list_cycle_II.md) | medium | 

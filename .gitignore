@@ -1,4 +1,4 @@
 .vscode/
 __pycache__/
 .venv/
-*/0000_test.py
+./0000_test.py
