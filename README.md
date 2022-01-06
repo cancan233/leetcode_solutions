@@ -21,6 +21,7 @@ python solutions for leetcode problems.
 | 206 | Reverse Linked list | [python](./solutions/0206_reverse_linked_list.md) | easy |
 | 237 | Delete node in a linked list | [python](./solutions/0237_delete_node_in_a_linked_list.md) | easy |
 | 334 | Increasing triplet subsequence | [python](./solutions/0334_increasing_triplet_subsequence.md) | medium |
+| 695 | Max Area of Island | [python](./solutions/0695_max_area_of_island.md) | medium |
 | 822 | Card flipping game | [python](./solutions/0822_card_flipping_game.md) | medium |
 
 
