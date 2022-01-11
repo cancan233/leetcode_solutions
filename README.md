@@ -21,9 +21,11 @@ python solutions for leetcode problems.
 | 206 | Reverse Linked list | [python](./solutions/0206_reverse_linked_list.md) | easy |
 | 237 | Delete node in a linked list | [python](./solutions/0237_delete_node_in_a_linked_list.md) | easy |
 | 334 | Increasing triplet subsequence | [python](./solutions/0334_increasing_triplet_subsequence.md) | medium |
+| 417 | Pacific Atlantic Water Flow | [python](./solutions/0417_pacific_atlantic_water_flow.md) | medium |
+| 547 | Number of Provinces | [python](./solutions/0547_number_of_provinces.md) | medium |
 | 695 | Max Area of Island | [python](./solutions/0695_max_area_of_island.md) | medium |
 | 822 | Card flipping game | [python](./solutions/0822_card_flipping_game.md) | medium |
-
+| 1022 | Sum of Root To Leaf Binary Numbers | [python](./solutions/1022_sum_of_root_to_leaf_binary_numbers.md) | easy |
 
 ## Some Useful Links
   * [https://github.com/apachecn/Interview](https://github.com/apachecn/Interview)
