@@ -12,6 +12,7 @@ python solutions for leetcode problems.
 | 19 | Remove nth node from end of list | [python](./solutions/0019_remove_nth_node_from_end_of_list.md) | medium | 
 | 24 | Swap nodes pairs | [python](./solutions/0024_swap_nodes_pairs.md) | medium |
 | 34 | Find First and Last Position of Element in Sorted Array | [python](./solutions/0034_find_first_and_last_position_of_element_in_sorted_array.md) | medium | 
+| 46 | Permutation | [python](./solutions/0046_permutation.md) | medium | 
 | 61 | Rotate list | [python](./solutions/0061_rotate_list.md) | medium |
 | 81 | Search in rotated sorted array II | [python](./solutions/0081_search_in_rotated_sorted_array_II.md) | medium |
 | 83 | Remove duplicates from sorted list | [python](./solutions/0083_remove_duplicates_from_sorted_list.md) | easy | 
