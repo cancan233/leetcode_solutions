@@ -2,3 +2,4 @@
 __pycache__/
 .venv/
 ./0000_test.py
+.ipynb_checkpoints
