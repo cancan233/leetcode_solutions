@@ -1,5 +1,5 @@
 .vscode/
 __pycache__/
 .venv/
-./0000_test.py
+solutions/*.py
 .ipynb_checkpoints
