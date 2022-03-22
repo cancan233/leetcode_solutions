@@ -8,6 +8,8 @@ python solutions for leetcode problems.
 | 2 | Add two numbers | [python](./solutions/0002_add_two_numbers.md) | easy |
 | 3 | Longest substring withouth repeating characters | [python](./solutions/0003_longest_substring_without_repeating_characters.md) | medium |
 | 4 | Median of two sorted arrays | [python](./solutions/0004_median_of_two_sorted_arrays.md) | hard |
+| 5 | Longest Palindromic Substring | [python](./solutions/0005_longest_palindromic_substring.md) | medium |
+| 6 | ZigZag Conversion | [python](./solutions/0006_zigzag_conversion.md) | medium |
 | 15 | 3Sum | [python](./solutions/0015_3sum.md) | medium |
 | 19 | Remove nth node from end of list | [python](./solutions/0019_remove_nth_node_from_end_of_list.md) | medium | 
 | 24 | Swap nodes pairs | [python](./solutions/0024_swap_nodes_pairs.md) | medium |

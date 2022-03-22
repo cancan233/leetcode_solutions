@@ -20,6 +20,9 @@ Output: "bb"
 
 中心扩展法。以每个字符为中心，向两边扩展。时间复杂度O(nlogn)。
 
+> Runtime: 924 ms, faster than 81.64% of Python3 online submissions for Longest Palindromic Substring.
+> Memory Usage: 14 MB, less than 41.07% of Python3 online submissions for Longest Palindromic Substring.
+
 ```python
 class Solution:
     def longestPalindrome(self, s: str) -> str:
