@@ -7,34 +7,31 @@ from utils import *
 
 class Solution:
     # def solution(self, nums, target):
-    def solution(self, s, numRows):
-        if numRows == 1 or numRows > len(s):
-            return s
-
-        table = ["" for j in range(numRows)]
-        row = 0
-        direction = "down"
-        for letter in s:
-            table[row] += letter
-
-            if row == 0:
-                direction = 1
-            elif row == numRows - 1:
-                direction = -1
-
-            row += direction
-
-        return "".join(table)
+    # def solution(self, s, numRows):
+    def solution(self, x):
+        output = ""
+        x = str(x)
+        if x[0] == "-":
+            output += "-"
+            x = x[1:]
+        output += x[-1]
+        for i in range(len(x) - 2, -1, -1):
+            # 2^31 - 1 = 2147483647
+            # 2^31 = 2147483648
+            if int(output) < -214748364 or int(output) > 214748364:
+                return 0
+            elif int(output) == -214748364 and int(x[i]) > 8:
+                return 0
+            elif int(output) == 214748364 and int(x[i]) > 7:
+                return 0
+            else:
+                output += x[i]
+        return int(output)
 
         pass
 
 
 if __name__ == "__main__":
-    # nums = [5, 7, 7, 8, 8, 10]
-    nums = []
-    target = 5
-    # print(Solution().solution(nums, target))
-
-    s = "PAYPALISHIRING"
-    numRows = 3
-    print(Solution().solution(s, numRows))
+    inputs = [123, -123, 120, 1000000, 1563847412]
+    for x in inputs:
+        print(Solution().solution(x))
