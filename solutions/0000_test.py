@@ -8,34 +8,23 @@ from utils import *
 class Solution:
     # def solution(self, nums, target):
     # def solution(self, s, numRows):
-    def solution(self, s):
-        ls = list(s.strip())
-        if len(s) == 0:
-            return 0
-        ls = list(s.strip())
+    def solution(self, height):
+        left, right = 0, len(height) - 1
+        max_container = 0
+        while left < right:
+            max_container = max(
+                max_container, min(height[left], height[right]) * (right - left)
+            )
+            if height[left] > height[right]:
+                right -= 1
+            else:
+                left += 1
+        return max_container
 
-        sign = -1 if ls[0] == "-" else 1
-        if ls[0] in ["-", "+"]:
-            del ls[0]
-        ret, i = 0, 0
-        while i < len(ls) and ls[i].isdigit():
-            ret = ret * 10 + ord(ls[i]) - ord("0")
-            i += 1
-        return max(-(2 ** 31), min(sign * ret, 2 ** 31 - 1))
         pass
 
 
 if __name__ == "__main__":
-    inputs = [
-        "42",
-        "     -42",
-        "4193 with words",
-        "words and 987",
-        "-+12",
-        "+-12",
-        "",
-        "+1",
-        " ",
-    ]
+    inputs = [[1, 8, 6, 2, 5, 4, 8, 3, 7], [1, 1], [1, 10, 1, 10]]
     for x in inputs:
         print(Solution().solution(x))
