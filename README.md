@@ -13,6 +13,8 @@ python solutions for leetcode problems.
 | 7 | Reverse Integer | [python](./solutions/0007_reverse_integer.md) | medium |
 | 8 | String to Integer (atoi) | [python](./solutions/0008_string_to_integer_atoi.md) | medium |
 | 11 | Container With Most Water | [python](./solutions/0011_container_with_most_water.md) | medium |
+| 13 | Roman to Integer | [python](./solutions/0013_roman_to_integer.md) | easy |
+| 14 | Longest Common Prefix | [python](./solutions/0014_longest_common_prefix.md) | easy |
 | 15 | 3Sum | [python](./solutions/0015_3sum.md) | medium |
 | 19 | Remove nth node from end of list | [python](./solutions/0019_remove_nth_node_from_end_of_list.md) | medium | 
 | 24 | Swap nodes pairs | [python](./solutions/0024_swap_nodes_pairs.md) | medium |
@@ -31,6 +33,7 @@ python solutions for leetcode problems.
 | 547 | Number of Provinces | [python](./solutions/0547_number_of_provinces.md) | medium |
 | 695 | Max Area of Island | [python](./solutions/0695_max_area_of_island.md) | medium |
 | 822 | Card flipping game | [python](./solutions/0822_card_flipping_game.md) | medium |
+| 923 | 3Sum With Multiplicity | [python](./solutions/0923_3sum_with_multiplicity.md) | medium |
 | 1022 | Sum of Root To Leaf Binary Numbers | [python](./solutions/1022_sum_of_root_to_leaf_binary_numbers.md) | easy |
 
 ## Some Useful Links
